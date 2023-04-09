@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: #232323; */
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #232323;
+    overflow-x: hidden;
+}
+
+header{
+    top: 0;
+    position: relative;
+}
+
+nav{
+    position: fixed;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 10%;
+    width: 100%;
+    background: rgba(79, 79, 79, 0.47);
+}
+
+a{
+    text-decoration: none;
+}
+
+.isiNav {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3em;
+    /* background-color: aqua; */
+}
+
+button {
+  padding: 9px 25px ;
+  background-color: yellow;
+  color: black;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s ;
+}
+
+button:hover {
+  color: white;
+  background-color: #232323;
+}
+
+.login button{
+    /* font-family: ; */
+    font-weight: bold;
+}
+
+.jumbotron{
+    background-image: url("assetsWebFinal/assetPromotion/jumbotronIMG.png");
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.kalimatJumbotron{
+    /* background-color: aqua; */
+    width: 50%;
+    height: 80%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.promothisweek{
+    height: 100vh;
+    width: 100vw;
+    background-color: #232323;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.promothisweekWord{
+    width: 65%;
+    height: 20%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    font-size: 2.5rem;
+}
+
+.promothisweekContainer{
+    width: 65%;
+    height: 80%;
+    /* background-color: aliceblue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sliderPromo{
+    width: 85%;
+    height: 70%;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+}
+
+.memberSection{
+    width: 100vw;
+    height: 80vh;
+    background-image: url("assetsWebFinal/assetPromotion/memberSection.png");
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+}
+
+.memberContainer{
+    width: 80%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    /* left : 10%; */
+    /* top: 100%; */
+    margin-left: 10%;
+    /* align-items: center; */
+    /* background-color: #232323; */
+    gap: 1rem;
+}
+
+.secMember1{
+    font-size: 2.7rem;
+}
+
+.secMember2{
+    font-size: 1.2rem;
+}
+
+.secMember3{
+    width: 8%;
+    padding: 9px 25px ;
+    background-color: yellow;
+    color: black;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s ;
+}
+
+/* footer */
+footer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #000;
+}
+
+.sosmed{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.sosmed i {
+    font-size: 20px;
+}
+
+.footer-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+    margin-bottom: 6%;
+}
+
+.footer-links a{
+    font-weight: lighter;
+}
+
+.rights{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
