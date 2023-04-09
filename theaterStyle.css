@@ -61,104 +61,119 @@ button:hover {
     font-weight: bold;
 }
 
-/* jumbotron */
 .jumbotron{
-    background-image: url("assetsWebFinal/assetPromotion/jumbotronIMG.png");
+    background-image: url("assetsWebFinal/theaterAssets/jumbotron.png");
     background-size: cover;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.kalimatJumbotron{
-    /* background-color: aqua; */
-    width: 50%;
-    height: 80%;
+    width: 100vw;
+    height: 60vh;
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    font-size: 3rem;
-    text-align: center;
+    /* position: relative; */
+    /* z-index: 1; */
 }
 
-.promothisweek{
-    height: 100vh;
-    width: 100vw;
-    background-color: #232323;
+.searchBar{
+    width: 32%;
+    height: 17%;
+    background-color: #D9D9D9;
+    /* position: absolute; */
+    /* z-index: 2; */
+    margin-bottom: -2%;
+    border-radius: 20px;
     display: flex;
     align-items: center;
-    flex-direction: column;
+    /* justify-content: center; */
+    /* margin-left: 10%; */
 }
 
-.promothisweekWord{
-    width: 65%;
-    height: 20%;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    font-size: 2.5rem;
-}
-
-.promothisweekContainer{
-    width: 65%;
-    height: 80%;
-    /* background-color: aliceblue; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.sliderPromo{
-    width: 85%;
-    height: 70%;
-    /* background-color: aqua; */
-    display: flex;
-    justify-content: center;
-}
-
-.memberSection{
-    width: 100vw;
-    height: 80vh;
-    background-image: url("assetsWebFinal/assetPromotion/memberSection.png");
-    background-size: 100% 100%;
-    display: flex;
-    align-items: center;
-}
-
-.memberContainer{
-    width: 80%;
+#locIcon{
+    width: 10%;
     height: 50%;
+    /* size: 2rem; */
+    font-size: 30px;
+    margin-left: 5%;
+    color: #232323;
+    /* background-color: bisque; */
+}
+
+.searchBarInner{
+    width: 76%;
+    height: 50%;
+    border: solid 1px;
+    border-color: #232323;
+    border-radius: 40px;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#dropIcon{
+    width: 10%;
+    height: 60%;
+    /* background-color: blue; */
+    font-size: 20px;
+    color: #232323;
+}
+
+.sbiWord{
+    color:#23232343;
+    margin-left: 5%;
+}
+
+.theaterSection{
+    margin-top: 5%;
+    width: 100vw;
+    height: 130vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 7%;
+}
+
+.theaterList1{
+    width: 70%;
+    height: 25%;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap : 5%;
+    border: solid 0.1px;
+    border-color: #dafc014e;
+}
+
+.theaterList1 img{
+    /* margin-left: 5%; */
+    width: 30%;
+}
+
+.theaterDetail{
+    width: 50%;
+    height: 90%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* align-items: center; */
-    /* left : 10%; */
-    /* top: 100%; */
-    margin-left: 10%;
-    /* align-items: center; */
-    /* background-color: #232323; */
     gap: 1rem;
 }
 
-.secMember1{
-    font-size: 2.7rem;
+#name{
+    font-size: 2.5rem;
 }
 
-.secMember2{
-    font-size: 1.2rem;
+#address{
+    font-size: 1rem;
 }
 
-.secMember3{
-    width: 8%;
-    padding: 9px 25px ;
-    background-color: yellow;
-    color: black;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s ;
+#phone{
+    color: blue;
+    border-bottom: solid 1px;
+    border-color: blue;
+    width: 21%;
 }
+
 
 /* footer */
 footer{
