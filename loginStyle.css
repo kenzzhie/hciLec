@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: #232323; */
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #232323;
+    overflow-x: hidden;
+}
+
+header{
+    top: 0;
+    position: relative;
+}
+
+nav{
+    position: fixed;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 10%;
+    width: 100%;
+    background: rgba(79, 79, 79, 0.47);
+}
+
+a{
+    text-decoration: none;
+}
+
+.isiNav {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3em;
+    /* background-color: aqua; */
+}
+
+button {
+  padding: 9px 25px ;
+  background-color: yellow;
+  color: black;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s ;
+}
+
+button:hover {
+  color: white;
+  background-color: #232323;
+}
+
+.login button{
+    /* font-family: ; */
+    font-weight: bold;
+}
+
+.container{
+    width: 100wv;
+    height: 120vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerImg{
+    background-image: url("assetsWebFinal/loginAssets/bg.png");
+    background-size: 100vw 100vh;
+    width: 100vw;
+    height: 190vh;
+    background-repeat: no-repeat;
+    /* -webkit-filter: blur(3px); */
+    filter: blur(3px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-attachment: fixed;
+    /* margin-top: 105; */
+}
+
+.loginContainer{
+    /* backdrop-filter: blur(3px); */
+    width: 45vw;
+    height: 90vh;
+    background-color: #D9D9D9;
+    position: absolute;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-evenly; */
+    gap : 5%;
+    border-radius: 10px;
+}
+
+.title{
+    /* background-color: #232323; */
+    width: 100%;
+    height: 15%;
+    font-size: 3rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.loginCon{
+    color: black;
+    border-right: solid 1px;
+    /* background-color: antiquewhite; */
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.register{
+    color: black;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.usernameTB{
+    background-color:#232323;
+    height: 10%;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    color: #d9d9d949;
+}
+
+.passwordTB{
+    background-color:#232323;
+    height: 10%;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    color: #d9d9d949;
+}
+
+#radioBox{
+    color: #232323;
+}
+
+.rememberMe{
+    height: 5%;
+    width: 25%;
+    /* background-color: aliceblue; */
+    color: #232323;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 2.5%;
+}
+
+.login_btn{
+    width: 15%;
+    height: 8%;
+    padding: 9px 25px ;
+    background-color: yellow;
+    color: black;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.forgotPass{
+    color: #232323;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 15%;
+}
+
+.register{
+    color: #2323237f;
+}
+
+/* footer */
+footer{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #000;
+    position: absolute;
+    /* bottom: 0; */
+}
+
+.sosmed{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.sosmed i {
+    font-size: 20px;
+}
+
+.footer-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+    margin-bottom: 6%;
+}
+
+.footer-links a{
+    font-weight: lighter;
+}
+
+.rights{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
