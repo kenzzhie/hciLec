@@ -1,0 +1,253 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: #232323; */
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #232323;
+    overflow-x: hidden;
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+
+header{
+    top: 0;
+    position: relative;
+}
+
+nav{
+    position: fixed;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 10%;
+    width: 100%;
+    background: rgba(79, 79, 79, 0.47);
+}
+
+a{
+    text-decoration: none;
+}
+
+.isiNav {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3em;
+    /* background-color: aqua; */
+}
+
+button {
+  padding: 9px 25px ;
+  background-color: yellow;
+  color: black;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s ;
+}
+
+button:hover {
+  color: white;
+  background-color: #232323;
+}
+
+.login button{
+    /* font-family: ; */
+    font-weight: bold;
+}
+
+.detailsContainer{
+    width: 100vw;
+    height: 100vh;
+    background-color: #232323;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3%;
+}
+
+.back_btn{
+    height: 5vh;
+    width: 100%;
+    margin-top: 5%;
+    margin-left: 2%;
+}
+
+#back{
+    font-size: 1.7rem;
+}
+
+.paymentTitle{
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 2%;
+}
+
+.containerPayment{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-bottom: 5%;
+}
+
+.containerPayment img{
+
+}
+
+.containerDetails{
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+    gap: 5%;
+    margin-top: 2%;
+    /* background-color: aliceblue; */
+}
+
+.total{
+    display: flex;
+    height: 70%;
+    width: 100%;
+    align-items: end;
+    justify-content: center;
+    /* background-color: aqua; */
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.optionsContainer{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    /* background-color: azure; */
+    gap: 10%;
+}
+
+.optionsTitle{
+    font-size: 1.3rem;
+    /* gap: 5%; */
+    height: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* background-color: aquamarine; */
+}
+
+.imgContainer{
+    gap: 5%;
+    width: 100%;
+    height: 45%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2%;
+}
+
+.summaryContainer{
+    margin-top: 4%;
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+}
+
+.summary{
+    width: 50%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10%;
+    /* background-color: blue; */
+}
+
+.subtotal{
+    font-size: 1.2rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tax{
+    font-size: 1.2rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#pay_btn{
+    font-size: 1.5rem;
+    border: solid 1px #D9FC01;
+    width: 7%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.service{
+    font-size: 1.2rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.total2{
+    font-size: 1.2rem;
+    /* background-color: aqua; */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+/* footer */
+footer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #000;
+}
+
+.sosmed{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.sosmed i {
+    font-size: 20px;
+}
+
+.footer-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+    margin-bottom: 6%;
+}
+
+.footer-links a{
+    font-weight: lighter;
+}
+
+.rights{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
