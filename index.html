@@ -13,11 +13,11 @@
         <nav>
             <a href="index.html" class="logo"><img src="assetsWebFinal/Logo.png" alt=""></a>
             <ul class="isiNav">
-                <a href="#"><li>Movies</li></a>
-                <a href="#"><li>Foods & Promos</li></a>
-                <a href="#"><li>Theaters</li></a>
+                <a href="#movies"><li>Movies</li></a>
+                <a href="promotion.html"><li>Foods & Promos</li></a>
+                <a href="theater.html"><li>Theaters</li></a>
             </ul>
-            <a href="#" class="login"><button>Log In</button></a>
+            <a href="login.html" class="login"><button>Log In</button></a>
         </nav>
     </header>
     <section class="carousel">
@@ -32,8 +32,11 @@
                     <div class="carousel-text-desc">
                         <p>description</p>
                     </div>
-                    <a href="#"><button>Tickets</button></a>
-                    <a href="#"><button>More info</button></a>
+                    <div class="carousel-btns">
+                        <a href="#" class="getTickets"><button>Get Tickets</button></a>
+                        <a href="#" class="moreInfo"><button>More info</button></a>
+                    </div>
+                   
                 </div>
             </div>
             <div class="carousel-slide-img" id="pussInBoots">
@@ -44,8 +47,10 @@
                     <div class="carousel-text-desc">
                         <p>description</p>
                     </div>
-                    <a href="#"><button>Tickets</button></a>
-                    <a href="#"><button>More info</button></a>
+                    <div class="carousel-btns">
+                        <a href="#" class="getTickets"><button> Get Tickets</button></a>
+                        <a href="#" class="moreInfo"><button>More info</button></a>
+                    </div>
                 </div>
             </div>
             <div class="carousel-slide-img" id="theWhale">
@@ -56,8 +61,10 @@
                     <div class="carousel-text-desc">
                         <p>description</p>
                     </div>
-                    <a href="#"><button>Tickets</button></a>
-                    <a href="#"><button>More info</button></a>
+                    <div class="carousel-btns">
+                        <a href="#" class="getTickets"><button> Get Tickets</button></a>
+                        <a href="#" class="moreInfo"><button>More info</button></a>
+                    </div>
                 </div>
             </div>
             <div class="carousel-slide-img" id="foodPromo">
@@ -68,8 +75,10 @@
                     <div class="carousel-text-desc">
                         <p>description</p>
                     </div>
-                    <a href="#"><button>Tickets</button></a>
-                    <a href="#"><button>More info</button></a>
+                    <div class="carousel-btns">
+                        <a href="#" class="getTickets"><button>GetTickets</button></a>
+                        <a href="#" class="moreInfo"><button>More info</button></a>
+                    </div>
                 </div>
             </div>
             <div class="carousel-slide-img" id="Oppenheimer">
@@ -80,8 +89,10 @@
                     <div class="carousel-text-desc">
                         <p>description</p>
                     </div>
-                    <a href="#"><button>Tickets</button></a>
-                    <a href="#"><button>More info</button></a>
+                    <div class="carousel-btns">
+                        <a href="#" class="getTickets"><button> Get Tickets</button></a>
+                        <a href="#" class="moreInfo"><button>More info</button></a>
+                    </div>
                 </div>
             </div>
             <div class="carousel-slide-img" id="discounts">
@@ -92,8 +103,10 @@
                     <div class="carousel-text-desc">
                         <p>description</p>
                     </div>
-                    <a href="#"><button>Tickets</button></a>
-                    <a href="#"><button>More info</button></a>
+                    <div class="carousel-btns">
+                        <a href="#" class="getTickets"><button> Get Tickets</button></a>
+                        <a href="#" class="moreInfo"><button>More info</button></a>
+                    </div>
                 </div>
             </div>
             <div class="carousel-slide-img" id="first-clone">
@@ -104,8 +117,10 @@
                     <div class="carousel-text-desc">
                         <p>description</p>
                     </div>
-                    <a href="#"><button>Tickets</button></a>
-                    <a href="#"><button>More info</button></a>
+                    <div class="carousel-btns">
+                        <a href="#" class="getTickets"><button> Get Tickets</button></a>
+                        <a href="#" class="moreInfo"><button>More info</button></a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -147,8 +162,8 @@
                         <img src="assetsWebFinal/poster8.png" alt="">
                       </div>
                       <div class="buttons">
-                        <a href="#" class="getTickets"><button>Get Tickets</button></a>
-                      <a href="#" class="moreInfo"><button>More Info</button></a>
+                        <a href="tickets.html" class="getTickets"><button>Get Tickets</button></a>
+                      <a href="pages/movie_detail2.html" class="moreInfo"><button>More Info</button></a>
                       </div>
                     </div>
                   </label>
@@ -178,22 +193,24 @@
                 <p>Movies In Lorem</p>
             </div>
             <div class="movies-top-opt">
-                <a href="#"><p>Now Showing</p></a>
-                <a href="#"><p>Coming Soon</p></a>
+                <p class="nowShowing">Now Showing</p>
+                <p class = "comingSoon">Coming Soon</p>
             </div>
         </div>
         <div class="movies-poster">
             <div class="poster-row">
-                <img src="assetsWebFinal/poster1.png" alt="">
-                <img src="assetsWebFinal/poster2.png" alt="">
-                <img src="assetsWebFinal/poster3.png" alt="">
-                <img src="assetsWebFinal/poster4.png" alt="">
+                <img src="assetsWebFinal/poster1.png" alt="" id="poster1">
+                <img src="assetsWebFinal/poster2.png" alt="" id="poster2">
+                <img src="assetsWebFinal/poster3.png" alt="" id="poster3">
+                <img src="assetsWebFinal/poster4.png" alt="" id="poster4">
             </div>
             <div class="poster-row">
-                <img src="assetsWebFinal/poster5.png" alt="">
-                <img src="assetsWebFinal/poster6.png" alt="">
-                <img src="assetsWebFinal/poster7.png" alt="">
-                <img src="assetsWebFinal/poster8.png" alt="">
+                <img src="assetsWebFinal/poster5.png" alt="" id="poster5">
+                <img src="assetsWebFinal/poster6.png" alt="" id="poster6">
+                <img src="assetsWebFinal/poster7.png" alt="" id="poster7">
+                <!-- <a href="pages/movie_detail2.html"> -->
+                <img src="assetsWebFinal/poster8.png" alt="" id="poster8" href="pages/movie_detail2.html">
+                <!-- </a> -->
             </div>
         </div>
     </section>
@@ -205,7 +222,7 @@
         </div>
         <div class="footer-links">
             <a href="#">About</a>
-            <a href="#">Help</a>
+            <a href="faq.html">Help</a>
             <a href="#">Terms Of Use</a>
         </div>
         <img src="assetsWebFinal/Line footer.png" alt="">

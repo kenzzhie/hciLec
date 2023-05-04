@@ -1,0 +1,462 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: #232323; */
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #232323;
+    overflow-x: hidden;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(assetsWebFinal/MCDJOWI_LG042.webp);
+    background-size: cover;
+    background-position: center center;
+    /* opacity: 0.5; */
+    z-index: -1;
+}
+
+header{
+    top: 0;
+    position: relative;
+}
+
+nav{
+    position: fixed;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 10%;
+    width: 100%;
+    background: rgba(79, 79, 79, 0.47);
+}
+
+a{
+    text-decoration: none;
+}
+
+.isiNav {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3em;
+    /* background-color: aqua; */
+}
+
+button {
+  padding: 9px 25px ;
+  background-color: yellow;
+  color: black;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s ;
+}
+
+button:hover {
+  color: white;
+  background-color: #232323;
+}
+
+.login button{
+    /* font-family: ; */
+    font-weight: bold;
+}
+
+/* options */
+.seats{
+    padding-top: 70px;
+    height: 100vh;
+    margin-bottom: 0;
+}
+
+.seats-title{
+    /* border: 1px solid white; */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 45px;
+    font-weight: 800;
+}
+
+.seats1{
+    /* border: 1px solid white; */
+    height: 90vh;
+    display: flex;
+    margin-bottom: 0;
+}
+
+.seats-select{
+    /* border: 1px solid white; */
+    margin: 1%;
+    margin-right: 0;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    margin-left: 140px;
+}
+
+.screen{
+    /* border: 1px solid green; */
+    margin: 1%;
+    margin-bottom: 0;
+    width: 60%;
+    /* height: 10%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.screen img {
+    width: 100%;
+}
+
+.seats-click{
+    /* border: 1px solid green; */
+    width: 70%;
+    height: 55%;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+
+.seats-click-left{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.seats-click-right{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.seats-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+}
+
+.seats-row img{
+    scale: 0.7;
+    cursor: pointer;
+}
+
+.seats-row p{
+    display: none;
+}
+
+.seats-info{
+    /* border: 1px solid green; */
+    margin: 1%;
+    margin-top: 4%;
+    width: 50%;
+    height: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+.seats-info img{
+    scale: 0.5;
+}
+
+.seat-no{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+}
+
+.seat-no img{
+    opacity: 0.3;
+}
+
+.seat-yes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+}
+
+.seat-selected{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+}
+
+.seats-opt{
+    /* border: 1px solid white; */
+    margin: 1%;
+    /* margin-left: 0; */
+    margin-right: 130px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.dates{
+    /* border: 1px solid yellow; */
+    margin: 1%;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+.dates-opt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #F7EE1C;
+    border-radius: 15px;
+    padding: 4px;
+    width: 13%;
+    transition: all 200ms;
+    cursor: pointer;
+}
+
+.dates-opt:hover{
+    scale: 1.03;
+    background-color: rgb(71, 69, 69);
+
+}
+
+.dates-opt.selected{
+    background-color: rgb(73, 71, 71);
+}
+
+.dates-num{
+    font-weight: 800;
+}
+.hours{
+    /* border: 1px solid yellow; */
+    margin: 1%;
+    width: 100%;
+    height: 6%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+.hours-opt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgba(217, 252, 1, 0.2);
+    border-radius: 999px;
+    width: 15%;
+    font-size: smaller;
+    transition: all 200ms;
+    cursor: pointer;
+}
+
+.hours-opt:hover{
+    scale: 1.03;
+    background-color: rgb(55, 53, 53);
+}
+
+.hours-opt.selected{
+    background-color: rgb(73, 71, 71);
+}
+
+.poster{
+    /* border: 1px solid yellow; */
+    /* border-radius: 7px; */
+    margin: 2%;
+    width: 58%;
+    height: 60%;
+}
+
+.poster img{
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+}
+
+/* ticket */
+.ticket{
+    height: 40vh;
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.movie-ticket{
+    width: 35%;
+    height: 80%;
+    /* border: 1px solid white; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* margin-bottom: 2%; */
+    background: url(assetsWebFinal/ticket\ bg.png);
+    background-size: cover;
+}
+
+.ticket-title{
+    margin: 1%;
+    margin-bottom: 0;
+}
+.ticket-title p{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.ticket-info{
+    display: flex;
+    /* border: 1px solid white; */
+    width: 80%;
+    height: 100%;
+    align-items: center;
+}
+
+.ticket-poster{
+    height: 100%;
+    width: 30%;
+    /* border: 1px solid yellow; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 3%;
+}
+
+.ticket-poster img{
+    width: 95%;
+    height: 90%;
+}
+
+.ticket-desc{
+    /* border: 1px solid white; */
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 100%;
+    gap: 2em;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 30px;
+}
+
+.ticket-desc-text{
+    display: flex;
+    gap: 1.5em;
+    font-size: 13px;
+}
+
+.ticket-buttons{
+    display: flex;
+    gap: 2em;
+}
+
+/* pop-up */
+
+.popUp{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #d9d9d9;
+    width: 400px;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    z-index: 1000;
+}
+
+.popUp-title p{
+    font-size: larger;
+    font-weight: 700;
+    color: black;
+}
+
+.popUp-desc p{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-size: 10px;
+    font-weight: 300;
+    color: rgb(72, 72, 72);
+}
+
+.popUp-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+.overlay {
+    display: none; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 999;
+  }
+  
+
+/* footer */
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #000;
+}
+
+.sosmed{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.sosmed i {
+    font-size: 20px;
+}
+
+.footer-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+    margin-bottom: 6%;
+}
+
+.footer-links a{
+    font-weight: lighter;
+}
+
+.rights{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,6 +1,7 @@
 const carouselSlide = document.querySelector('.carousel-slide');
-const carouselImg = document.querySelectorAll('.carousel-slide-img')
-
+const carouselImg = document.querySelectorAll('.carousel-slide-img');
+const comingSoon = document.querySelector('.comingSoon');
+const nowShowing = document.querySelector('.nowShowing');
 
 const prevBtn = document.querySelector('#prevBtn');
 const nextBtn = document.querySelector('#nextBtn');
@@ -38,3 +39,27 @@ carouselSlide.addEventListener('transitionend', ()=>{
 
     }
 });
+
+comingSoon.addEventListener('click', function(){
+    let posterRow = document.querySelector('.poster-row');
+
+    posterRow.classList.add('poster-transition');
+
+    setTimeout(function(){
+        let posterRowImg = document.querySelectorAll('.poster-row img');
+
+        for(let i = 0; i < posterRowImg.length; i++){
+            posterRowImg[i].src = 'assetsWebFinal/comingPoster' + (i+1) + '.png';
+        }
+
+        posterRow.classList.remove('poster-transition');
+    }, 300);
+});
+
+nowShowing.addEventListener('click', function(){
+    let posterRowImg = document.querySelectorAll('.poster-row img');
+
+    for(let i = 0; i < posterRowImg.length; i++){
+        posterRowImg[i].src = 'assetsWebFinal/poster' + (i+1) + '.png';
+    }
+})
