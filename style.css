@@ -8,6 +8,7 @@
     /* background-color: #232323; */
     color: white;
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -438,6 +439,14 @@ input {
 .movies{
     height: 100vh;
     background-color: #232323;
+}
+
+.nowShowing{
+    cursor: pointer;
+}
+
+.comingSoon{
+    cursor: pointer;
 }
 
 .movies-top{

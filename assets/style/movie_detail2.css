@@ -1,17 +1,73 @@
-body{
+*{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    /* background-color: #232323; */
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #232323;
     overflow-x: hidden;
 }
 
-*{
-    box-sizing: border-box;
+header{
+    top: 0;
+    position: relative;
+}
+
+nav{
+    position: fixed;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 10%;
+    width: 100%;
+    background: rgba(79, 79, 79, 0.47);
+}
+
+a{
+    text-decoration: none;
+}
+
+.isiNav {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3em;
+    /* background-color: aqua; */
+}
+
+button {
+  padding: 9px 25px ;
+  background-color: yellow;
+  color: black;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s ;
+}
+
+button:hover {
+  color: white;
+  background-color: #232323;
+}
+
+.login button{
+    /* font-family: ; */
+    font-weight: bold;
 }
 
 .movie-banner{
     height: 95vh;
     width: 100vw;
-    background-image: url(../image/trailer-image.png);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../../assetsWebFinal/MCDJOWI_LG042.webp);
+    background-size: cover;
+    background-position: center center;
+    z-index: -1;
     position: relative;
 }
 
@@ -152,54 +208,41 @@ body{
     
 }
 
-header{
-    top: 0;
+.getTickets button{
+    align-items: center;
+    background: #232323;
+    border: 0.9375px solid rgba(217, 252, 1, 0.4);
+    box-shadow: 0px 1.875px 3.75px rgba(0, 0, 0, 0.2), 0px 4.6875px 14.0625px rgba(0, 0, 0, 0.15);
+    border-radius: 3.75px;
+    /* box-sizing: border-box; */
+    color: #D9FC01;
+    cursor: pointer;
+    display: inline-flex;
+    font-size: 12px;
+    font-weight: 400;
+    justify-content: center;
+    /* line-height: 1.25; */
+    margin: 0;
+    min-height: 3rem;
+    padding: 2px 24px;
     position: relative;
-}
-
-nav{
-    position: fixed;
-    z-index: 1000;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 10px 10%;
-    width: 100%;
-    background: rgba(79, 79, 79, 0.47);
-}
-
-a{
     text-decoration: none;
+    transition: all 0.25s;
+    user-select: none;
+    -webkit-user-select: none;
+    width: 100%;
 }
 
-.isiNav {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 3em;
-    /* background-color: aqua; */
+
+.getTickets button:hover {
+    background-color: #343333;
+    border-color: rgba(0, 0, 0, 0.15);
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+    color: white;
+    transform: translateY(-1px);
 }
 
-button {
-  padding: 9px 25px ;
-  background-color: yellow;
-  color: black;
-  border: none;
-  border-radius: 50px;
-  cursor: pointer;
-  transition: all 0.3s ease 0s ;
-}
 
-button:hover {
-  color: white;
-  background-color: #232323;
-}
-
-.login button{
-    /* font-family: ; */
-    font-weight: bold;
-}
 
 /* footer */
 footer{

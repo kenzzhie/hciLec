@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -116,6 +120,7 @@ button:hover {
 .loginCon{
     color: black;
     border-right: solid 1px;
+    font-family: 'Inter';
     /* background-color: antiquewhite; */
     width: 50%;
     display: flex;
@@ -123,6 +128,7 @@ button:hover {
 }
 
 .register{
+    font-family: 'Inter';
     color: black;
     width: 50%;
     display: flex;

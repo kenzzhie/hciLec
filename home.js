@@ -2,7 +2,7 @@ const carouselSlide = document.querySelector('.carousel-slide');
 const carouselImg = document.querySelectorAll('.carousel-slide-img');
 const comingSoon = document.querySelector('.comingSoon');
 const nowShowing = document.querySelector('.nowShowing');
-
+const jonWik = document.getElementById('poster8');
 const prevBtn = document.querySelector('#prevBtn');
 const nextBtn = document.querySelector('#nextBtn');
 
@@ -63,3 +63,10 @@ nowShowing.addEventListener('click', function(){
         posterRowImg[i].src = 'assetsWebFinal/poster' + (i+1) + '.png';
     }
 })
+
+
+jonWik.addEventListener('click', function(e) {
+    if (e.target.tagName === 'IMG') {
+      window.location.href = 'movie_detail2.html';
+    }
+});
