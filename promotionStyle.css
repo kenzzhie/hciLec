@@ -248,9 +248,13 @@ footer{
   
   .slides .navigation .prev:hover, .slides .navigation .next:hover{
     background: rgba(0,0,0,1);
-  }
+}
 
   @keyframes fade {
     from{opacity: 0.3}
     to {opacity: 1}
   }
+.footer-line{
+    margin-top: 2%;
+    margin-bottom: 2%;
+}

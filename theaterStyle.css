@@ -181,7 +181,7 @@ button:hover {
     color: blue;
     border-bottom: solid 1px;
     border-color: blue;
-    width: 21%;
+    width: 24%;
 }
 
 
@@ -222,4 +222,9 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.footer-line{
+    margin-top: 2%;
+    margin-bottom: 2%;
 }

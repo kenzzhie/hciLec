@@ -5,6 +5,7 @@ const nowShowing = document.querySelector('.nowShowing');
 const jonWik = document.getElementById('poster8');
 const prevBtn = document.querySelector('#prevBtn');
 const nextBtn = document.querySelector('#nextBtn');
+const qs = document.getElementById('qs');
 
 let counter = 1;
 const size = carouselImg[0].clientWidth;
@@ -57,11 +58,19 @@ comingSoon.addEventListener('click', function(){
 });
 
 nowShowing.addEventListener('click', function(){
-    let posterRowImg = document.querySelectorAll('.poster-row img');
+    let posterRow = document.querySelector('.poster-row');
 
-    for(let i = 0; i < posterRowImg.length; i++){
-        posterRowImg[i].src = 'assetsWebFinal/poster' + (i+1) + '.png';
-    }
+    posterRow.classList.add('poster-transition');
+
+    setTimeout(function(){
+        let posterRowImg = document.querySelectorAll('.poster-row img');
+
+        for(let i = 0; i < posterRowImg.length; i++){
+            posterRowImg[i].src = 'assetsWebFinal/poster' + (i+1) + '.png';
+        }
+
+        posterRow.classList.remove('poster-transition');
+    }, 300);
 })
 
 
@@ -70,3 +79,9 @@ jonWik.addEventListener('click', function(e) {
       window.location.href = 'movie_detail2.html';
     }
 });
+
+qs.addEventListener('click', function(e){
+    if (e.target.tagName === 'IMG') {
+        window.location.href = 'tickets.html';
+    }
+})

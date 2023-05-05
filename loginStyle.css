@@ -342,3 +342,9 @@ footer{
     justify-content: center;
     align-items: center;
 }
+
+
+.footer-line{
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
